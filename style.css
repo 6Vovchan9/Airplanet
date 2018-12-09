@@ -1,3 +1,206 @@
-.header {
-    background-color: pink;
+body {
+    margin: 0;
+    font-size: 16px;
 }
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+.header {
+    background: #4b73b5;
+    color: #fff;
+    
+}
+.container {
+    margin: 0 auto;
+    width: 1060px;
+}
+.header__container {
+    height: 77px;
+    position: relative;
+    /* border: 2px solid black; */
+}
+.logo {
+    position: absolute;
+    top: 21px;
+    left: 1px;;
+}
+.contacts {
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    font-style: normal;
+    text-align: right;
+}
+.contacts__phone {
+    color: inherit;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.contacts__description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+.page-content {
+    width: 880px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 13px 3px 0px 0px;
+    float: right;
+    /* background: pink; *//
+    /* border: 2px solid black; */
+}
+.sidebar {
+    width: 106px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 45px 0px 0px 0px;
+    /* border: 2px solid black; */
+
+}
+.menu__link {
+    color: #4b73b5;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+.tariffs-section {
+    /* width: 748px; */
+    /* height: 543px; */
+    margin: 16px 0px 0px 0px;
+}
+.section-title  {
+    font-size: 49px;
+    margin: 0;
+    padding: 0;
+}
+.tariff {
+    /* width: 720px;
+    float: right; */
+    margin: 27px 0px 0px 28px;
+}
+.tariff__name, .tariff__desc-heading, .tariff__cost {
+    text-align: center;
+}
+.tariff__name {
+    color: #212121;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.88px;
+    margin: 35px 0 0 0;
+}
+.tariff__name:before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    background: url('./img/tariff.png');
+    margin: 43px auto 35px;
+    display: block;
+
+}
+.tariff__desc-heading, .tariff__desc-list {
+    width: 188px;
+    margin: 28px auto;
+    font-size: 18px;
+}
+.tariff__desc-list-item {
+    list-style-type: disc;
+    margin: 0 0 15px 0;
+}
+.tariff__cost {
+    margin: 35px 0 48px 0;
+    color: #212121;
+    font-size: 54px;
+}
+.tariff__cost-amount {
+    letter-spacing: -1.07px;
+}
+.tariff__item {
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    width: 250px;
+    /* height: 456px; */
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+.news-section {
+    margin: 61px 0 0 0;
+}
+.news {
+    margin: 73px 0 0 0;
+    border: 1px solid black;
+}
+.footer {
+    background: #4b73b5;
+    color: #fff;
+    clear: both;
+}
+.news__item {
+    margin: 0 0 58px 0;
+    border: 1px solid black;
+}
+
+.news__text {
+    margin: 16px 0 0 0;
+}
+.news__avatar-pic {
+    width: 158px;
+    height: 158px;
+    border: 1px solid black;
+    border-radius: 79px;
+}
+.news__avatar {
+    display: inline-block;
+    vertical-align: top;
+}
+.news__desc {
+    width: 644px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    border: 1px solid black;
+}
+
+/* .wrapper {
+    margin: 0 auto;
+    background: pink;
+    width: 1500px;
+    border: 2px solid black;
+}
+.header {
+    width: 1250px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background: blue;
+}
+.header > a,address {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+.contacts {
+    float: right;
+}
+.page {
+    width: 1250px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.sidebar {
+    border: 2px solid black;
+    display: inline-block;
+    width: 19%;
+    vertical-align: top;
+    float: left;
+}
+.page-content {
+    border: 2px solid black;
+    display: inline-block;
+    width: 80%;
+
+} */

@@ -8,99 +8,116 @@
 <body>
     <div class="wrapper">
         <header class="header">
-           <a href="" class="logo">
-               <img src="./img/Logo1.png" alt="Logotip1" class="logo__image">
-               <img src="./img/Logo2.png" alt="Logotip2" class="logo__image">
-           </a> 
-           <address class="contacts">
-               <a href="tel:+78000039210" class="contacts__phone">8(800)00-392-10</a>
-               <div class="contacts__description">График работы</div>
-           </address>
+            <div class="container header__container">
+                <a href="" class="logo">
+                   <img src="./img/logo.png" alt="Logotip1" class="logo__image">
+                </a> 
+                <address class="contacts">
+                   <a href="tel:+78000039210" class="contacts__phone">8(800)00-392-10</a>
+                   <div class="contacts__description">График работы</div>
+                </address>
+            </div>
         </header>
         <main class="page">
-            <div class="page-content">
-                <!-- <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                         <li class="breadcrumbs__item">
-                             <a href="#" class="breadcrumbs__link">Главная</a>
-                             <div class="breadcrumbs__separator">/</div>
-                         </li>
-                         <li class="breadcrumbs__item">
-                             <a href="#" class="breadcrumbs__link">Маршруты</a>
-                         </li>  
-                    </ul>
-                </nav> -->
-                <div class="picture">
-                    <img src="./img/Photo.png" alt="Главная картинка" class="picture__image">
-                </div>
-                <section class="tariffs-section">
-                    <h2 class="section-title">Тарифы</h2>
-                    <ul class="tariff">
-                        <li class="tariff__item">
-                            <div class="tariff__icon">
-                                <img src="#" alt="Иконка для тарифа" class="tariff__icon-image">
-                            </div>
-                            <div class="tariff__content">
-                                <div class="tariff__name">Стандарт</div>
-                                <p class="tariff__desc-heading">Создан для вашего комфортного отдыха</p>
-                                <ul class="tariff__desc-list">
-                                    <li class="tariff__desc-list-item">Питание включено</li>
-                                    <li class="tariff__desc-list-item">Багаж (5 кг)</li>
-                                    <li class="tariff__desc-list-item">Детское кресло</li>
-                                </ul>
-                                <div class="tariff__cost">$19</div>
-                            </div>
-                        </li>
-                        <li class="tariff__item">
-                            <div class="tariff__icon">
-                                <img src="#" alt="Иконка для тарифа" class="tariff__icon-image">
-                            </div>
-                            <div class="tariff__content">
-                                <div class="tariff__name">Стандарт</div>
-                                <p class="tariff__desc-heading">Для любителей хороших впечатлений</p>
-                                <ul class="tariff__desc-list">
-                                    <li class="tariff__desc-list-item">Питание включено</li>
-                                    <li class="tariff__desc-list-item">Багаж (5 кг)</li>
-                                    <li class="tariff__desc-list-item">Детское кресло</li>
-                                </ul>
-                                <div class="tariff__cost">$39</div>
-                            </div>
-                        </li>
-                        <li class="tariff__item">
-                            <div class="tariff__icon">
-                                <img src="#" alt="Иконка для тарифа" class="tariff__icon-image">
-                            </div>
-                            <div class="tariff__content">
-                                <div class="tariff__name">Стандарт</div>
-                                <p class="tariff__desc-heading">Все самое лучшее и незабываемое</p>
-                                <ul class="tariff__desc-list">
-                                    <li class="tariff__desc-list-item">Питание включено</li>
-                                    <li class="tariff__desc-list-item">Багаж (5 кг)</li>
-                                    <li class="tariff__desc-list-item">Детское кресло</li>
-                                </ul>
-                                <div class="tariff__cost">$99</div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <section class="news-section">
-                    <h2 class="section-title">Последние новости</h2>
-                    <ul class="news">
-                        <li class="news__item">
-                            <div class="news__avatar">
-                                <img src="" alt="" class="news__avatar-pic">
-                            </div>
-                            <div class="news__desc">
-                                <time class="news__date">12.10.2016</time>
-                                <div class="news__theme">Ночные перелеты дешевле!</div>
-                                <p class="news__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio minima in veritatis perferendis sapiente est rerum numquam quae et? Ullam nisi deleniti rerum delectus adipisci ipsum, obcaecati laudantium eveniet.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="news__item">
+            <div class="container">
+                <aside class="sidebar">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Экипаж</a>
+                            </li>
+                        </ul>
+                    </nav> 
+                </aside>
+                <div class="page-content">
+                    <!-- <nav class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                             <li class="breadcrumbs__item">
+                                 <a href="#" class="breadcrumbs__link">Главная</a>
+                                 <div class="breadcrumbs__separator">/</div>
+                             </li>
+                             <li class="breadcrumbs__item">
+                                 <a href="#" class="breadcrumbs__link">Маршруты</a>
+                             </li>  
+                        </ul>
+                    </nav> -->
+                    <div class="picture">
+                        <img src="./img/picture.png" alt="Главная картинка" class="picture__image">
+                    </div>
+                    <section class="tariffs-section">
+                        <h2 class="section-title">Тарифы</h2>
+                        <ul class="tariff">
+                            <li class="tariff__item">
+                                <div class="tariff__content">
+                                    <div class="tariff__name">Стандарт</div>
+                                    <p class="tariff__desc-heading">Создан для вашего комфортного отдыха</p>
+                                    <ul class="tariff__desc-list">
+                                        <li class="tariff__desc-list-item">Питан j j j j j jhhhhhhhhh j j j j ие включено</li>
+                                        <li class="tariff__desc-list-item">Багаж (5 кг)</li>
+                                        <li class="tariff__desc-list-item">Детское кресло</li>
+                                    </ul>
+                                    <div class="tariff__cost">
+                                        <span class="tariss__cost-value">$</span>
+                                        <span class="tariff__cost-amount">19</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tariff__item">
+                                <div class="tariff__content">
+                                    <div class="tariff__name">Премиум</div>
+                                    <p class="tariff__desc-heading">Для любителей хороших впечатлений</p>
+                                    <ul class="tariff__desc-list">
+                                        <li class="tariff__desc-list-item">Питание включено</li>
+                                        <li class="tariff__desc-list-item">Багаж (5 кг)</li>
+                                        <li class="tariff__desc-list-item">Детское кресло</li>
+                                    </ul>
+                                    <div class="tariff__cost">
+                                        <span class="tariss__cost-value">$</span>
+                                        <span class="tariff__cost-amount">39</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tariff__item">
+                                <div class="tariff__content">
+                                    <div class="tariff__name">Лакшери</div>
+                                    <p class="tariff__desc-heading">Все самое лучшее и незабываемое</p>
+                                    <ul class="tariff__desc-list">
+                                        <li class="tariff__desc-list-item">Питание включено</li>
+                                        <li class="tariff__desc-list-item">Багаж (5 кг)</li>
+                                        <li class="tariff__desc-list-item">Детское кресло</li>
+                                    </ul>
+                                    <div class="tariff__cost">
+                                        <span class="tariss__cost-value">$</span>
+                                        <span class="tariff__cost-amount">99</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="news-section">
+                        <h2 class="section-title">Последние новости</h2>
+                        <ul class="news">
+                            <li class="news__item">
                                 <div class="news__avatar">
-                                    <img src="" alt="" class="news__avatar-pic">
+                                    <img src="./img/news__pic1.png" alt="" class="news__avatar-pic">
+                                </div>
+                                <div class="news__desc">
+                                    <time class="news__date">12.10.2016</time>
+                                    <div class="news__theme">Ночные перелеты дешевле!</div>
+                                    <p class="news__text">
+                                        Lorem ipsum dolor sit amet consectggggggggggggggggggggggggggggggggggggggggg gggggggggggggggggggggggg ggggggggggggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggggggggggggetur adipisicing elit. Maiores odio minima in veritatis perferendis sapiente est rerum numquam quae et? Ullam nisi deleniti rerum delectus adipisci ipsum, obcaecati laudantium eveniet.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="news__item">
+                                <div class="news__avatar">
+                                    <img src="./img/news__pic2.png" alt="" class="news__avatar-pic">
                                 </div>
                                 <div class="news__desc">
                                     <time class="news__date">01.02.2016</time>
@@ -111,83 +128,56 @@
                                 </div>
                             </li>
                             <li class="news__item">
-                                    <div class="news__avatar">
-                                        <img src="" alt="" class="news__avatar-pic">
-                                    </div>
-                                    <div class="news__desc">
-                                        <time class="news__date">22.12.2015</time>
-                                        <div class="news__theme">Детские авиабилеты доступны для бизнес-класса</div>
-                                        <p class="news__text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio minima in veritatis perferendis sapiente est rerum numquam quae et? Ullam nisi deleniti rerum delectus adipisci ipsum, obcaecati laudantium eveniet.
-                                        </p>
-                                    </div>
-                                </li>
-                    </ul>
-                    <div class="pagination">
-                        <div class="pagination__display">Страницы 1 из 7</div>
-                        <div class="pagination__controlls">
-                            <a href="#" class="pagination__prev"><</a>
-                            <ul class="pagination__list">
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">1</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">2</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">3</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">4</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">5</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">6</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">7</a>
-                                </li>
-                            </ul>
-                            <a href="#" class="pagination__next">></a>
+                                <div class="news__avatar">
+                                    <img src="./img/news__pic3.png" alt="" class="news__avatar-pic">
+                                </div>
+                                <div class="news__desc">
+                                    <time class="news__date">22.12.2015</time>
+                                    <div class="news__theme">Детские авиабилеты доступны для бизнес-класса</div>
+                                    <p class="news__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio minima in veritatis perferendis sapiente est rerum numquam quae et? Ullam nisi deleniti rerum delectus adipisci ipsum, obcaecati laudantium eveniet.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <div class="pagination__display">Страницы 1 из 7</div>
+                            <div class="pagination__controlls">
+                                <a href="#" class="pagination__prev"><</a>
+                                <ul class="pagination__list">
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">4</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">5</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">6</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">7</a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="pagination__next">></a>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
-            <aside class="sidebar">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <div class="menu__icon">
-                                    <img src="" alt="" class="menu__icon-picture">
-                                </div>
-                                <div class="menu__title">Главная</div>
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <div class="menu__icon">
-                                    <img src="" alt="" class="menu__icon-picture">
-                                </div>
-                                <div class="menu__title">Отзывы</div>
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <div class="menu__icon">
-                                    <img src="" alt="" class="menu__icon-picture">
-                                </div>
-                                <div class="menu__title">Экипаж</div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav> 
-            </aside>
         </main> 
         <footer class="footer">
-            
+            <div class="container">
+                <p>Hello</p>
+            </div>
         </footer>
     </div>
 </body>
