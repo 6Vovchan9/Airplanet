@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8" />
     <title>Станица Вована</title>
     <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
-                <a href="" class="logo">
+                <a href="" class="logo logo__header">
                    <img src="./img/logo.png" alt="Logotip1" class="logo__image">
                 </a> 
                 <address class="contacts">
@@ -23,30 +24,19 @@
                 <aside class="sidebar">
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__item">
+                            <li class="menu__item menu__item--active">
                                 <a href="#" class="menu__link menu__link--main">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link main_icon--feed">Отзывы</a>
+                                <a href="#" class="menu__link menu__link--feed">Отзывы</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link main_icon--team">Экипаж</a>
+                                <a href="#" class="menu__link menu__link--team">Экипаж</a>
                             </li>
                         </ul>
                     </nav> 
                 </aside>
                 <div class="page-content">
-                    <!-- <nav class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-                             <li class="breadcrumbs__item">
-                                 <a href="#" class="breadcrumbs__link">Главная</a>
-                                 <div class="breadcrumbs__separator">/</div>
-                             </li>
-                             <li class="breadcrumbs__item">
-                                 <a href="#" class="breadcrumbs__link">Маршруты</a>
-                             </li>  
-                        </ul>
-                    </nav> -->
                     <div class="picture">
                         <img src="./img/picture.png" alt="Главная картинка" class="picture__image">
                     </div>
@@ -146,7 +136,7 @@
                                 <a href="#" class="pagination__prev"><</a>
                                 <ul class="pagination__list">
                                     <li class="pagination__item">
-                                        <a href="#" class="pagination__link">1</a>
+                                        <a href="#" class="pagination__link pagination__link--active">1</a>
                                     </li>
                                     <li class="pagination__item">
                                         <a href="#" class="pagination__link">2</a>
@@ -175,8 +165,23 @@
             </div>
         </main> 
         <footer class="footer">
-            <div class="container">
-                <p>Hello</p>
+            <div class="container footer__container">
+                <div class="letter">
+                    Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com/" class="loft">LoftSchool</a>. Автор работы: <b>Прохладов Вадим</b>
+                </div>
+                <a href="" class="logo logo__footer">
+                   <img src="./img/logo.png" alt="Logotip1" class="logo__image">
+                </a> 
+                <div class="social-networks">
+                    <div class="social-networks__head">Наши социальные сети:</div>
+                    <div class="social-networks__list">
+                            <a href="" class="social-networks__link social-networks__link--vk">vk</a>
+                            <a href="" class="social-networks__link social-networks__link--fb">fb</a>
+                            <a href="" class="social-networks__link social-networks__link--google">google</a>
+                            <a href="" class="social-networks__link social-networks__link--twitter">twit</a>
+                            <a href="" class="social-networks__link social-networks__link--mail">mail</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
