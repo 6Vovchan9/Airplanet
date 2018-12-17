@@ -1,0 +1,61 @@
+.menu__link {
+    color: #4b73b5;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+.menu__link:hover {
+    color: #221f1f;
+}
+.menu__link:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 23px;
+    height: 18px;
+    margin: 0 15px 0 0;
+    background: center center no-repeat;
+}
+.menu__link--main:before {
+    background-image: url("../img/main_icon.png");
+}
+.menu__link--main:hover:before {
+    background-image: url("../img/main_icon_hover.png");
+}
+.menu__link--feed:before {
+    background-image: url("../img/feed_icon.png");
+}
+.menu__link--feed:hover:before {
+    background-image: url("../img/feed_icon_hover.png");
+}
+.menu__link--team:before {
+    background-image: url("../img/team_icon.png");
+}
+.menu__link--team:hover:before {
+    background-image: url("../img/team_icon_hover.png");
+}
+
+.menu__item--active .menu__link--main {
+    color: #221f1f;
+}
+.menu__item--active .menu__link--main:before {
+    background-image: url("../img/main_icon_hover.png");
+}
+.menu__item--active .menu__link--feed {
+    color: #221f1f;
+}
+.menu__item--active .menu__link--feed:before {
+    background-image: url("../img/feed_icon_hover.png");
+}
+.menu__item--active .menu__link--team {
+    color: #221f1f;
+}
+.menu__item--active .menu__link--team:before {
+    background-image: url("../img/team_icon_hover.png");
+}
+
+.menu__item {
+    margin: 0 0 30px 0;
+}
