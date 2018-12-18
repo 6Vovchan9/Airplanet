@@ -92,7 +92,7 @@ ul li {
 .contacts__description-hover:hover .schedule__wrapper {
     opacity: 1;
     /* 1)transition-property 2)transition-duration 3)transition-timing-function 4)transition-delay; */
-    transition: opacity 3s cubic-bezier(.43,-0.42,.16,1.63); 
+    transition: opacity 1s cubic-bezier(.43,-0.42,.16,1.63); 
 }
 .contacts__description-hover:hover .contacts__description {
     opacity: 1;
@@ -551,10 +551,6 @@ ul li {
 .team__person {
     max-width: 258px;
 }
-/* .team__avatar {
-    display: inline-block;
-    margin: 20px auto;
-} */
 .team__appearance {
     display: flex;
     height: 190px;
@@ -609,15 +605,14 @@ ul li {
 
 
 .application {
-    background-color: #4bb56b;
+    background-image: url("../img/application.png");
     color: #ffffff;
 }
 .application__container {
     margin-top: 64px;
     display: flex;
     justify-content: center;
-    background: #4bb56b center center no-repeat;
-    background-image: url("../img/application.png");
+
 }
 .application__content {
     width: 621px;
@@ -639,45 +634,36 @@ ul li {
     justify-content: center;
     margin-top: 58px;
 }
-.reviews__window {
+/* .reviews__window {
     padding: 50px 70px;
     width: 66%;
     background-color: #f5f5f5;
-}
+} */
 .reviews__records {
-    margin-top: 27px;
+    padding: 50px 70px;
+    width: 66%;
+    background-color: #f5f5f5;
     color: #221f1f;
     line-height: 34px;
     font-size: 14px;
     font-weight: 300;
+}
+.reviews__client-inf, .reviews__client-comment, .reviews__row {
+    margin-top: 15px;
 }
 .reviews__client-inf {
     display: flex;
     flex-wrap: wrap;
 }
 .client-inf__col {
-    display: flex;
-}
-.client-inf__col--1 {
     flex: 1;
-    min-width: 100px;
-}
-.client-inf__col--2 {
-    width: 48%;
-    min-width: 150px;
 }
 .client-vk, .client-name {
+    min-width: 150px;
+    width: 96%;
     height: 45px;
 }
-.reviews__client-name {
-    width: 92.1%;
-}
-.reviews__client-vk {
-    width: 100%;
-}
-.client-name, .client-vk {
-    width: 100%;
-}
+
 .client-comment {
     max-width: 100%;
     max-height: 90px;
@@ -685,26 +671,21 @@ ul li {
 
 
 
-.reviews__client-foto-and-submit {
+.reviews__row {
     display: flex;
     flex-wrap: wrap;
 }
-.client-foto-and-submit__col {
-    display: flex;
-    /* flex: 1; */
-}
-.client-foto-and-submit__col--1 {
+.reviews__question {
     flex: 1;
     min-width: 183px;
 }
-/* .client-foto-and-submit__col--2 {
-    flex-direction: row-reverse;
-} */
-.reviews__submit {
+.reviews__client-foto {
+    margin-right: 20px;
+}
+.reviews__submit-button {
     border-radius: 5px;
     background-color: #4b73b5;
-    padding: 0 18px;
-    margin-top: 10px;
+    padding: 0 19px;
     color: #ffffff;
     font-size: 12px;
     font-weight: 700;
@@ -712,7 +693,7 @@ ul li {
     text-transform: uppercase;
     letter-spacing: 2.4px;
 }
-.reviews__submit:after {
+.reviews__submit-button:after {
     content: "";
     margin-left: 10px;
     display: inline-block;
@@ -722,11 +703,11 @@ ul li {
     background: center center no-repeat;
     background-image: url("../img/button-submit.png");
 }
-.reviews__submit:hover {
+.reviews__submit-button:hover {
     color: #1c5bc3;
     background-color: #ffffff;
 }
-.reviews__submit:hover:after {
+.reviews__submit-button:hover:after {
     background-image: url("../img/button-submit_hover.png");
 }
 

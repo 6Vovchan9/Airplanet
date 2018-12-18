@@ -25,17 +25,16 @@
                     </div>
                     <div class="header__col header__col--align-right">
                         <address class="contacts">
-                           <a href="tel:+78000039210" class="contacts__phone">8(800)00-392-10</a>
-                           <div class="contacts__description">График работы</div>
-                           <!-- <div class="contacts__description">
-                               <button class="schedule__btn">График работы</button>
+                            <a href="tel:+78000039210" class="contacts__phone">8(800)00-392-10</a>
+                            <div class="contacts__description-hover">
+                                <div class="contacts__description">График работы</div>
                                 <div class="schedule__wrapper">
                                     <div class="schedule__block">
-                                        <div>Rjyntyn</div>
-                                        <div>Rjyntyn2</div>
+                                        <div class="schedule__work">пн-вс: 09:00-20:00</div>
+                                        <div class="schedule__dinner">обед: 14:00-14:40</div>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                         </address>
                     </div>
                 </div>
@@ -172,45 +171,43 @@
             </div>
             <div class="reviews-form">
                 <div class="container reviews-form__container">
-                    <div class="reviews__window">
+                    <form class="reviews__records" action="order.php" method="POST">
                         <h2 class="section-title">Оставить отзыв</h2>
-                        <form class="reviews__records" action="order.php" method="POST">
-                            <div class="reviews__client-inf">
-                                <div class="client-inf__col client-inf__col--1">
-                                    <label class="reviews__client-name">
-                                        <div>Ваше имя</div>
-                                        <input type="text" autocomplete name="client-name" id="client-name" class="client-name" placeholder="  Андрюха">
-                                    </label>
-                                </div>
-                                <div class="client-inf__col client-inf__col--2">
-                                    <label class="reviews__client-vk">
-                                        <div>Cсылка на профиль VK</div>
-                                        <input type="text" name="client-vk" id="client-vk" class="client-vk" placeholder="  vk.com/example">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="reviews__client-comment">
-                                <label>
-                                    <div>Текст отзыва</div>
-                                    <textarea name="comment" class="client-comment" id="client-comment" cols="240" rows="20" placeholder="  Мне понравилось"></textarea>
+                        <div class="reviews__client-inf">
+                            <div class="client-inf__col">
+                                <label class="reviews__client-name">
+                                    <div>Ваше имя</div>
+                                    <input type="text" autocomplete name="client-name" id="client-name" class="client-name" placeholder="  Андрюха">
                                 </label>
                             </div>
-                            <div class="reviews__client-foto-and-submit">
-                                <div class="client-foto-and-submit__col client-foto-and-submit__col--1">
-                                    <label class="reviews__client-foto">
-                                        <div>Отображать фото в отзыве?</div>
-                                        <input type="radio" name="photo" value="yes">Да
-                                        <input type="radio" name="photo" value="no" checked>Нет
-                                    </label>
-                                </div>
-                                <div class="client-foto-and-submit__col client-foto-and-submit__col--2">
-                                    <div class="reviews__submit-form">
-                                        <button name="submit" class="reviews__submit">Отправить</button>
-                                    </div>
-                                </div>
+                            <div class="client-inf__col">
+                                <label class="reviews__client-vk">
+                                    <div>Cсылка на профиль VK</div>
+                                    <input type="text" name="client-vk" id="client-vk" class="client-vk" placeholder="  vk.com/example">
+                                </label>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="reviews__client-comment">
+                            <label>
+                                <div>Текст отзыва</div>
+                                <textarea name="comment" class="client-comment" id="client-comment" cols="240" rows="20" placeholder="  Мне понравилось"></textarea>
+                            </label>
+                        </div>
+                        <div class="reviews__row">
+                            <div class="reviews__question">
+                                <div>Отображать фото в отзыве?</div>
+                                <label class="reviews__client-foto">
+                                    <input type="radio" name="photo" value="no">Да
+                                </label>
+                                <label class="reviews__client-foto">
+                                    <input type="radio" name="photo" value="no" checked>Нет
+                                </label>
+                            </div>
+                            <div class="reviews__submit">
+                                <button name="submit" class="reviews__submit-button">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
