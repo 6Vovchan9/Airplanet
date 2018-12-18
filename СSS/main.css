@@ -67,7 +67,6 @@ ul li {
     background: #fff;
     top: 80px;
     color: #000;
-    transition: opacity 1s;
     border-radius: 5px;
     box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
 }
@@ -77,11 +76,10 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
 }
 .schedule__block:before {
-
     content: "";
     border: 12px solid transparent;
     border-bottom: 12px solid #fff;
@@ -91,17 +89,28 @@ ul li {
     top: -24px;
     width: 0;
 }
-.contacts__description:hover + .schedule__wrapper {
-    opacity: 1;
-}
 .contacts__description-hover:hover .schedule__wrapper {
     opacity: 1;
+    /* 1)transition-property 2)transition-duration 3)transition-timing-function 4)transition-delay; */
+    transition: opacity 3s cubic-bezier(.43,-0.42,.16,1.63); 
+}
+.contacts__description-hover:hover .contacts__description {
+    opacity: 1;
+}
+.schedule__block {
+    color: #1c5bc3;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.schedule__dinner {
+    color: #221f1f;
+    font-weight: 300;
 }
 
 
 
 .contacts__description:hover {
-    opacity: 1;
     cursor: pointer;
 }
 
