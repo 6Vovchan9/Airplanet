@@ -227,8 +227,9 @@ ul li {
 .sidebar {
     width: 17%;
 }
-.menu {
-    padding-left: 37px;
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
 }
 .menu__link {
     color: #4b73b5;
@@ -242,7 +243,10 @@ ul li {
     transition: color 0.3s;
 
 }
-
+.menu__item {
+    margin-right: 10%;
+    padding-left: 37px;
+}
 
 .menu__link:before {/*before--синий */
     content: "";
@@ -542,14 +546,16 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin-left: 28px;
 }
 .tariff__item {
     margin-top: 34px;
     display: flex;
     justify-content: center;
-    flex: 1 0 220px;
+    flex: 1 0 150px;
     border: 1px solid #fff;
     border-radius: 5px;
+    max-width: 250px;
 }
 .tariff__item--active {
     border-color: #e8e9ed;
@@ -561,6 +567,7 @@ ul li {
     position: relative;
     max-width: 200px;
     margin-top: 125px;
+    padding: 0 5px;
 }
 .tariff__content:before {
     content: "";
