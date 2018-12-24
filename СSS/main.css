@@ -90,6 +90,7 @@ ul li {
     text-transform: uppercase;
     letter-spacing: 2.4px;
     text-decoration: none;
+    transition: 0.3s;
 }
 .button-begin:after {
     margin-left: 9px;
@@ -100,13 +101,16 @@ ul li {
     height: 14px;
     background: center center no-repeat;
     background-image: url("../img/intro_icon.png");
+    transition: 0.3s;
 }
 .intro__button:hover {
     background-color: #1c5bc3;
     color: #ffffff;
+    transition: 0.3s;
 }
 .button-begin:hover:after {
-    background-image: url("../img/intro_icon_hover.png")
+    background-image: url("../img/intro_icon_hover.png");
+    transition: 0.3s;
 }
 
 
