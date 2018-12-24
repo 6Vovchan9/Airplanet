@@ -183,28 +183,28 @@
             </main>
             
             
-            <div class="container reviews-form__container">
-                <form class="reviews__records" action="order.php" method="POST">
-                    <h2 class="section-title">Оставить отзыв</h2>
-                    <div class="reviews__row">
+            <div class="container form__container">
+                <form class="form__elem" action="order.php" method="POST">
+                    <div class="section-title">Оставить отзыв</div>
+                    <div class="form__row">
                         <label class="form__block">
-                            <div class="form-controls__title">Ваше имя</div>
-                            <input type="text" autocomplete name="client-name" id="client-name" class="reviews__input" placeholder="Андрюха">
+                            <div class="form__title">Ваше имя</div>
+                            <input type="text" autocomplete name="client-name" id="client-name" class="form__input" placeholder="Андрюха">
                         </label>
                         
                         <label class="form__block">
-                            <div class="form-controls__title">Cсылка на профиль VK</div>
-                            <input type="text" name="client-vk" id="client-vk" class="reviews__input" placeholder="vk.com/example">
+                            <div class="form__title">Cсылка на профиль VK</div>
+                            <input type="text" name="client-vk" id="client-vk" class="form__input" placeholder="vk.com/example">
                         </label>
                         
                     </div>
-                    <div class="reviews__row">
-                        <label class="client-comment__block">
-                            <div class="form-controls__title">Текст отзыва</div>
-                            <textarea name="comment" class="client-comment" id="client-comment" placeholder="Мне понравилось"></textarea>
+                    <div class="form__row">
+                        <label class="form__block form__block--comment">
+                            <div class="form__title">Текст отзыва</div>
+                            <textarea name="comment" class="form__input form__input--textarea" id="client-comment" placeholder="Мне понравилось"></textarea>
                         </label>
                     </div>
-                    <div class="reviews__row">
+                    <div class="form__row">
                         <div class="form-controls">
                             <div class="form-controls__title">Отображать фото в отзыве?</div>
                             <div class="form-controls__buttons">
@@ -220,8 +220,8 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="reviews__submit">
-                            <button type="submit" name="submit" class="reviews__submit-button">Отправить</button>
+                        <div class="form__submit">
+                            <button type="submit" name="submit" class="form__submit-button">Отправить</button>
                         </div>
                     </div>
                 </form>

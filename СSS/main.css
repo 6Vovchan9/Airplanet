@@ -223,7 +223,7 @@ ul li {
 
 
 .page {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .page__container {
     display: flex;
@@ -234,6 +234,8 @@ ul li {
 
 .sidebar {
     width: 26%;
+    display: flex;
+    flex-direction: column;
 }
 .menu__list {
     display: flex;
@@ -246,7 +248,7 @@ ul li {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2.4px;
-    line-height: 54px;
+    line-height: 12px;
     position: relative;
     transition: color 0.3s;
 
@@ -386,6 +388,7 @@ ul li {
 
 
 .picture__image {
+    margin-top: 12px;
     display: block;
     max-width: 119%;
 }
@@ -414,14 +417,15 @@ ul li {
 .reviews-section {
     display: flex;
     flex-direction: column;
-    margin-top: 23px;
+    margin-top: 28px;
 }
 .reviews {
-    margin-top: 48px;
+    margin-top: 50px;
 }
 .reviews__item {
     display: flex;
-    padding: 30px 0; 
+    padding-bottom: 20px;
+    margin-top: 30px;
     border-bottom: 2px solid #f5f5f5;
 }
 .reviews__date {
@@ -446,7 +450,7 @@ ul li {
     border: none;
 }
 .reviews__item:first-child {
-    padding-top: 0;
+    margin-top: 0;
 }
 .reviews__appearance {
     padding-right: 20px;
@@ -519,9 +523,9 @@ ul li {
 
 
 .partners-section {
-    /* margin-top: 52px; */
+    margin-top: 7px;
     margin-right: 25px;
-    padding: 30px 0;
+    padding-bottom: 30px;
     border: 1px solid #e8e9ed;
 }
 .partners__section-title {
@@ -529,6 +533,8 @@ ul li {
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
+    line-height: 18px;
+    margin-top: 28px;
 }
 .partners {
     margin-top: 36px;
@@ -645,7 +651,7 @@ ul li {
     margin-top: 20px;
 }
 .news {
-    margin-top: 48px;
+    margin-top: 40px;
     display: flex;
 }
 .news__item {
@@ -688,7 +694,7 @@ ul li {
     max-width: 100%;
 }
 .news__desc {
-    margin-top: 20px;
+    margin-top: 47px;
 }
 
 
@@ -703,7 +709,7 @@ ul li {
 
 
 .team-section {
-    margin-top: 28px;
+    margin-top: 44px;
 }
 .team {
     display: flex;
@@ -747,6 +753,7 @@ ul li {
     opacity: 0.6;
 }
 .team__desc {
+    margin-top: 10px;
     text-align: center;
     font-size: 14px;
     font-weight: 300;
@@ -755,17 +762,17 @@ ul li {
 }
 .team__desc p {
     margin-bottom: 0;
+    margin-top: 5px;
 }
 .team__person-name {
     font-size: 18px;
     font-weight: 700;
 }
 .team__person-status {
-    margin-top: 14px;
+    margin-top: 5px;
     color: #4b73b5;
     font-weight: 700;
 }
-
 
 
 
@@ -789,6 +796,7 @@ ul li {
     font-weight: 300;
     font-size: 18px;
     padding: 30px 14px;
+    margin-top: 5px;
     background-image: url("../img/pattern.png");
     text-align: center;
 }
@@ -804,26 +812,30 @@ ul li {
 }
 
 
-.reviews-form__container {
+.form__container {
     display: flex;
     justify-content: center;
-    margin-top: 58px;
+    margin-top: 62px;
 }
-.reviews__records {
+.form__elem {
     display: flex;
     flex-direction: column;
-    padding: 50px 70px;
-    width: 61%;
+    padding: 52px 98px 46px;
+    width: 66%;
     background-color: #f5f5f5;
     color: #221f1f;
-    line-height: 54px;
+    line-height: 34px;
     font-size: 14px;
     font-weight: 300;
 }
 
-.reviews__client-inf {
+.form__row {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 11px;
+}
+.form__row:nth-child(2) {
+    margin-top: 20px;
 }
 .form__block {
     flex: 1;
@@ -832,7 +844,7 @@ ul li {
 .form__block:last-child {
     margin-right: 0;
 }
-.reviews__input {
+.form__input {
     min-width: 150px;
     width: 100%;
     height: 45px;
@@ -842,33 +854,22 @@ ul li {
     border-radius: 3px;
 }
 
-.client-comment__block {
-    flex: 1;
-}
-.client-comment {
-    padding: 10px;
-    width: 100%;
+.form__input--textarea {
     resize: vertical;
-    min-height: 90px;
-    border: 1px solid #ffffff;
-    outline: none;
-    border-radius: 3px;
+    height: 90px;
 }
 
-.client-comment::placeholder, .reviews__input::placeholder {
+.form__input::placeholder {
     font-size: 14px;
     font-weight: 300;
     opacity: 0.5;
     color: #221f1f;
 }
-.client-comment:focus, .reviews__input:focus {
+.form__input:focus {
     border-color: #4b73b5;
 }
 
-.reviews__row {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .form-controls {
     flex: 1;
     min-width: 183px;
@@ -920,7 +921,9 @@ ul li {
     color: #4b73b5;
 }
 
-.reviews__submit-button {
+
+.form__submit-button {
+    margin-top: 10px;
     border-radius: 5px;
     background-color: #4b73b5;
     padding: 0 40px 0 19px;
@@ -933,7 +936,7 @@ ul li {
     position: relative;
     transition: 0.5s;
 }
-.reviews__submit-button:before {
+.form__submit-button:before {
     content: "";
     position: absolute;
     display: block;
@@ -942,7 +945,7 @@ ul li {
     transform: translateY(-50%);
     background: center center no-repeat;
 }
-.reviews__submit-button:before {
+.form__submit-button:before {
     background-image: url("../img/button_icon/button_icon.png");
     background-position: 0px 0px;
     width: 15px;
@@ -950,7 +953,7 @@ ul li {
     opacity: 1;
     transition: 0.5s;
 }
-.reviews__submit-button:after {
+.form__submit-button:after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -960,7 +963,7 @@ ul li {
     transform: translateY(-50%);
     background: center center no-repeat;
 }
-.reviews__submit-button:after {
+.form__submit-button:after {
     background-image: url("../img/button_icon/button_icon.png");
     background-position: -15px 0px;
     width: 15px;
@@ -970,16 +973,16 @@ ul li {
 }
 
 
-.reviews__submit-button:hover {
+.form__submit-button:hover {
     color: #1c5bc3;
     background-color: #ffffff;
     transition: 0.5s;
 }
-.reviews__submit-button:hover:after {
+.form__submit-button:hover:after {
     opacity: 1;
     transition: 0.5s;
 }
-.reviews__submit-button:hover:before {
+.form__submit-button:hover:before {
     opacity: 0;
     transition: 0.5s;
 }
@@ -988,7 +991,7 @@ ul li {
 
 .footer {
     background-color: #4b73b5;
-    margin-top: 50px;
+    margin-top: 80px;
     color: #ffffff;
     font-size: 14px;
 }
@@ -1005,6 +1008,9 @@ ul li {
     align-items: center;
 }
 .social-networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
 }
 .footer__col--align-right {
