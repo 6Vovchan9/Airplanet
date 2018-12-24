@@ -42,48 +42,34 @@
             <main class="page">
                 <div class="container page__container">
                     <aside class="sidebar">
-                        <!-- <nav class="menu">
-                            <ul class="menu__list">
-                                <li class="menu__item">
-                                    <a href="./main.html" class="menu__link menu__link--main">Главная</a>
-                                </li>
-                                <li class="menu__item menu__item--active">
-                                    <a class="menu__link menu__link--feed">Отзывы</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="./team.html" class="menu__link menu__link--team">Экипаж</a>
-                                </li>
-                            </ul>
-                        </nav>  -->
-                        <div class="application__content">
+                        <div class="support">
                             <p>
                                 Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить <span>заявку на сайте</span> или же позвонить по номеру круглосуточной поддержки <a href="tel:+78000039210" class="contacts__phone contacts__phone--application">8(800)00-392-10</a>.
                             </p>
                         </div>
-                        <div class="footer__col footer__col--align-right">
-                            <div class="social-networks">
-                                <div class="social-networks__head">Наши социальные сети:</div>
-                                <div class="social-networks__icon">
-                                    <ul class="social-networks__list">
-                                        <li class="social-networks__item">
-                                            <a href="https://vk.com/msk89629083493" class="social-networks__link social-networks__link--vk">vk</a>
-                                        </li>
-                                        <li class="social-networks__item">
-                                            <a href="#" class="social-networks__link social-networks__link--fb">fb</a>
-                                        </li>
-                                        <li class="social-networks__item">
-                                            <a href="#" class="social-networks__link social-networks__link--google">google</a>
-                                        </li>
-                                        <li class="social-networks__item">
-                                            <a href="#" class="social-networks__link social-networks__link--twitter">twit</a>
-                                        </li>
-                                        <li class="social-networks__item">
-                                            <a href="#" class="social-networks__link social-networks__link--mail">mail</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="social-networks">
+                            <div class="social-networks__head">Наши социальные сети:</div>
+                            <div class="social-networks__icon">
+                                <ul class="social-networks__list">
+                                    <li class="social-networks__item">
+                                        <a href="https://vk.com/msk89629083493" class="social-networks__link social-networks__link--vk">vk</a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a href="#" class="social-networks__link social-networks__link--fb">fb</a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a href="#" class="social-networks__link social-networks__link--google">google</a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a href="#" class="social-networks__link social-networks__link--twitter">twit</a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a href="#" class="social-networks__link social-networks__link--mail">mail</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                    
                     </aside>
                     <div class="page-content">
                         <nav class="menu">
@@ -99,16 +85,7 @@
                                 </li>
                             </ul>
                         </nav> 
-                        <!-- <nav class="breadcrumbs">
-                            <ul class="breadcrumbs__list">
-                                <li class="breadcrumbs__item">
-                                    <a href="./main.html" class="breadcrumbs__link">Главная</a>
-                                </li>
-                                <li class="breadcrumbs__item breadcrumbs__item--active">
-                                    <a class="breadcrumbs__link">Отзывы</a>
-                                </li>
-                            </ul>
-                        </nav> -->
+                        
                         <section class="reviews-section">
                             <h2 class="section-title">Отзывы</h2>
                             <ul class="reviews">
@@ -204,59 +181,50 @@
                     </div>
                 </div>
             </main>
-            <!-- <div class="application">
-                <div class="container application__container">
-                    <div class="application__content">
-                        <p>
-                            Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить <span>заявку на сайте</span> или же позвонить по номеру круглосуточной поддержки <a href="tel:+78000039210" class="contacts__phone contacts__phone--application">8(800)00-392-10</a>.
-                        </p>
+            
+            
+            <div class="container reviews-form__container">
+                <form class="reviews__records" action="order.php" method="POST">
+                    <h2 class="section-title">Оставить отзыв</h2>
+                    <div class="reviews__row">
+                        <label class="form__block">
+                            <div class="form-controls__title">Ваше имя</div>
+                            <input type="text" autocomplete name="client-name" id="client-name" class="reviews__input" placeholder="Андрюха">
+                        </label>
+                        
+                        <label class="form__block">
+                            <div class="form-controls__title">Cсылка на профиль VK</div>
+                            <input type="text" name="client-vk" id="client-vk" class="reviews__input" placeholder="vk.com/example">
+                        </label>
+                        
                     </div>
-                </div>
-            </div> -->
-            <div class="reviews-form">
-                <div class="container reviews-form__container">
-                    <form class="reviews__records" action="order.php" method="POST">
-                        <h2 class="section-title">Оставить отзыв</h2>
-                        <div class="reviews__client-inf">
-                            <label class="form__block">
-                                <div>Ваше имя</div>
-                                <input type="text" autocomplete name="client-name" id="client-name" class="client-name" placeholder="Андрюха">
-                            </label>
-                            
-                            <label class="form__block">
-                                <div>Cсылка на профиль VK</div>
-                                <input type="text" name="client-vk" id="client-vk" class="client-vk" placeholder="vk.com/example">
-                            </label>
-                            
-                        </div>
-                        <div class="reviews__client-comment">
-                            <label>
-                                <div>Текст отзыва</div>
-                                <textarea name="comment" class="client-comment" id="client-comment" placeholder="Мне понравилось"></textarea>
-                            </label>
-                        </div>
-                        <div class="reviews__row">
-                            <div class="form-controls">
-                                <div class="form-controls__title">Отображать фото в отзыве?</div>
-                                <div class="form-controls__buttons">
-                                    <label class="form-controls__btn">
-                                        <input type="radio" name="photo" value="yes" checked class="form-controls__real-radio">
-                                        <div class="form-controls__fake-radio"></div>
-                                        <div class="form-controls__btn-title">Да</div>
-                                    </label>
-                                    <label class="form-controls__btn">
-                                        <input type="radio" name="photo" value="no" class="form-controls__real-radio">
-                                        <div class="form-controls__fake-radio"></div>
-                                        <div class="form-controls__btn-title">Нет</div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="reviews__submit">
-                                <button name="submit" class="reviews__submit-button">Отправить</button>
+                    <div class="reviews__row">
+                        <label class="client-comment__block">
+                            <div class="form-controls__title">Текст отзыва</div>
+                            <textarea name="comment" class="client-comment" id="client-comment" placeholder="Мне понравилось"></textarea>
+                        </label>
+                    </div>
+                    <div class="reviews__row">
+                        <div class="form-controls">
+                            <div class="form-controls__title">Отображать фото в отзыве?</div>
+                            <div class="form-controls__buttons">
+                                <label class="form-controls__btn">
+                                    <input type="radio" name="photo" value="yes" checked class="form-controls__real-radio">
+                                    <div class="form-controls__fake-radio"></div>
+                                    <div class="form-controls__btn-title">Да</div>
+                                </label>
+                                <label class="form-controls__btn">
+                                    <input type="radio" name="photo" value="no" class="form-controls__real-radio">
+                                    <div class="form-controls__fake-radio"></div>
+                                    <div class="form-controls__btn-title">Нет</div>
+                                </label>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="reviews__submit">
+                            <button type="submit" name="submit" class="reviews__submit-button">Отправить</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
         <footer class="footer">
@@ -271,30 +239,6 @@
                        <img src="./img/logo.png" alt="Logotip" class="logo__image">
                     </a> 
                 </div>
-                <!-- <div class="footer__col footer__col--align-right">
-                    <div class="social-networks">
-                        <div class="social-networks__head">Наши социальные сети:</div>
-                        <div class="social-networks__icon">
-                            <ul class="social-networks__list">
-                                <li class="social-networks__item">
-                                    <a href="https://vk.com/msk89629083493" class="social-networks__link social-networks__link--vk">vk</a>
-                                </li>
-                                <li class="social-networks__item">
-                                    <a href="#" class="social-networks__link social-networks__link--fb">fb</a>
-                                </li>
-                                <li class="social-networks__item">
-                                    <a href="#" class="social-networks__link social-networks__link--google">google</a>
-                                </li>
-                                <li class="social-networks__item">
-                                    <a href="#" class="social-networks__link social-networks__link--twitter">twit</a>
-                                </li>
-                                <li class="social-networks__item">
-                                    <a href="#" class="social-networks__link social-networks__link--mail">mail</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </footer>
     </div>
