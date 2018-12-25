@@ -597,7 +597,7 @@ ul li {
 }
 .tariff__content {
     max-width: 210px;
-    margin-top: 30px;
+    margin-top: 26px;
     padding: 0 5px;
 }
 .tariff__header {
@@ -638,8 +638,8 @@ ul li {
     color: #212121;
     font-size: 54px;
     font-weight: 400;
-    margin-top: 3px;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 9px;
 }
 .tariss__cost-value {
     color: #202020;
@@ -666,7 +666,7 @@ ul li {
     font-size: 14px;
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 45px;
 }
 .news__item:last-child {
     margin-right: 0px;
