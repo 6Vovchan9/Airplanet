@@ -420,7 +420,7 @@ ul li {
     margin-top: 28px;
 }
 .reviews {
-    margin-top: 50px;
+    margin-top: 45px;
 }
 .reviews__item {
     display: flex;
@@ -438,7 +438,7 @@ ul li {
     font-weight: 700;
     line-height: 21px;
     font-size: 18px;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 .reviews__text {
     color: #221f1f;
@@ -455,6 +455,7 @@ ul li {
     margin-top: 0;
 }
 .reviews__appearance {
+    padding-top: 5px;
     padding-right: 21px;
     width: 23%;
 }
@@ -637,8 +638,8 @@ ul li {
     color: #212121;
     font-size: 54px;
     font-weight: 400;
-    margin-top: 23px;
-    margin-bottom: 30px;
+    margin-top: 3px;
+    margin-bottom: 20px;
 }
 .tariss__cost-value {
     color: #202020;
@@ -666,6 +667,9 @@ ul li {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
+}
+.news__item:last-child {
+    margin-right: 0px;
 }
 .news__appearance {
     display: flex;
