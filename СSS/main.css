@@ -92,7 +92,7 @@ ul li {
     text-decoration: none;
     transition: 0.3s;
 }
-.button__form:after {
+.intro__btn:after {
     margin-left: 9px;
     content: "";
     display: inline-block;
@@ -108,7 +108,7 @@ ul li {
     color: #ffffff;
     transition: 0.3s;
 }
-.button__form:hover:after {
+.intro__btn:hover:after {
     background-image: url("../img/intro_icon_hover.png");
     transition: 0.3s;
 }
@@ -952,7 +952,7 @@ ul li {
 }
 
 
-.form__submit-button {
+.btn {
     margin-top: 10px;
     border-radius: 5px;
     background-color: #4b73b5;
@@ -966,7 +966,7 @@ ul li {
     position: relative;
     transition: 0.5s;
 }
-.form__submit-button:before {
+.btn:before {
     content: "";
     position: absolute;
     display: block;
@@ -975,7 +975,7 @@ ul li {
     transform: translateY(-50%);
     background: center center no-repeat;
 }
-.form__submit-button:before {
+.btn:before {
     background-image: url("../img/button_icon/button_icon.png");
     background-position: 0px 0px;
     width: 15px;
@@ -983,7 +983,7 @@ ul li {
     opacity: 1;
     transition: 0.5s;
 }
-.form__submit-button:after {
+.btn:after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -993,7 +993,7 @@ ul li {
     transform: translateY(-50%);
     background: center center no-repeat;
 }
-.form__submit-button:after {
+.btn:after {
     background-image: url("../img/button_icon/button_icon.png");
     background-position: -15px 0px;
     width: 15px;
@@ -1003,16 +1003,16 @@ ul li {
 }
 
 
-.form__submit-button:hover {
+.btn:hover {
     color: #1c5bc3;
     background-color: #ffffff;
     transition: 0.5s;
 }
-.form__submit-button:hover:after {
+.btn:hover:after {
     opacity: 1;
     transition: 0.5s;
 }
-.form__submit-button:hover:before {
+.btn:hover:before {
     opacity: 0;
     transition: 0.5s;
 }
