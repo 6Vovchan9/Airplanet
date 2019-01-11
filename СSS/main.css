@@ -251,7 +251,6 @@ ul li {
     line-height: 12px;
     position: relative;
     transition: color 0.3s;
-
 }
 .menu__item {
     margin-right: 10%;
@@ -358,8 +357,6 @@ ul li {
 }
 .breadcrumbs__list {
     display: flex;
-}
-.breadcrumbs__list {
     opacity: 0.8;
 }
 .breadcrumbs__link {
@@ -641,7 +638,7 @@ ul li {
     margin-top: 12px;
     margin-bottom: 9px;
 }
-.tariss__cost-value {
+.tariff__cost-value {
     color: #202020;
     
 }
@@ -709,13 +706,6 @@ ul li {
 .news__desc {
     margin-top: 47px;
 }
-
-
-
-
-
-
-
 
 
 
