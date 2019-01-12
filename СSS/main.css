@@ -593,11 +593,36 @@ ul li {
     border-color: #e8e9ed;
 }
 .tariff__content {
+    position: relative;
     max-width: 210px;
     margin-top: 26px;
     padding: 0 5px;
 }
+.tariff__content:before {
+    content: "";
+    /* position: absolute; */
+    /* transform: translateX(-50%); */
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #4b73b5 center center no-repeat;
+    
+}
+.tariff__content:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    transform: translateX(-50%);
+    display: inline-block;
+    background-image: url("../img/tariff_icon/tariff_icon.png");
+    background-position: -32px 0px;
+    width: 27px;
+    height: 31px;
+}
+
 .tariff__header {
+    margin-top: 15px;
     color: #221f1f;
     font-size: 18px;
     font-weight: 700;
@@ -643,7 +668,6 @@ ul li {
     
 }
 .tariff__cost-amount {
-    
     letter-spacing: -1.07px;
 }
 
