@@ -12,6 +12,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 ul li {
     list-style: none;
 }
@@ -31,6 +32,7 @@ ul li {
     background: url("../img/intro.png") 100% 100% no-repeat;
     background-size: cover;
 }
+
 .intro__background {
     display: flex;
     justify-content: center;
@@ -39,6 +41,7 @@ ul li {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6);
 }
+
 .intro__content {
     padding: 10px 10px;
     animation-name: intro-animation;
@@ -92,6 +95,7 @@ ul li {
     text-decoration: none;
     transition: 0.3s;
 }
+
 .intro__btn:after {
     margin-left: 9px;
     content: "";
@@ -103,6 +107,7 @@ ul li {
     background-image: url("../img/intro_icon.png");
     transition: 0.3s;
 }
+
 .intro__button:hover {
     background-color: #1c5bc3;
     color: #ffffff;
@@ -199,16 +204,19 @@ ul li {
     /* 1)transition-property 2)transition-duration 3)transition-timing-function 4)transition-delay; */
     transition: opacity 1s cubic-bezier(.43,-0.42,.16,1.63); 
 }
+
 .contacts__description-hover:hover .contacts__description {
     opacity: 1;
     transition: 1s;
 }
+
 .schedule__block {
     color: #1c5bc3;
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
 }
+
 .schedule__dinner {
     color: #221f1f;
     font-weight: 300;
@@ -225,6 +233,7 @@ ul li {
 .page {
     margin-top: 20px;
 }
+
 .page__container {
     display: flex;
    /* justify-content: space-between; <---или так(1)*/
@@ -320,7 +329,6 @@ ul li {
     height: 18px;
 }
 
-
 .menu__link:hover {
     color: #221f1f;
     transition: 0.4s;
@@ -334,7 +342,6 @@ ul li {
     transition: 0.3s;
 }
 
-
 .menu__item--active .menu__link {
     color: #221f1f;
 }
@@ -345,12 +352,18 @@ ul li {
     opacity: 1;
 }
 
+
+
+
 .page-content {
     display: flex;
     flex-direction: column;
     width: 74%;
     /* margin-left: auto;<---или так(1) */
 }
+
+
+
 
 .breadcrumbs {
     margin-top: 15px;
@@ -389,18 +402,6 @@ ul li {
     display: block;
     max-width: 119%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .section-title {
