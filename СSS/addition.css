@@ -3,11 +3,11 @@ html, body {
 }
 .wrapper {
     overflow: hidden;
-    min-width: 1200px;
+    /* min-width: 1200px; для адаптивной верстки не ставим это */
     min-height: 100%;
     display: flex;
     flex-direction: column;
-}
+} 
 .wrapper__content {
     flex: 1;
 }
